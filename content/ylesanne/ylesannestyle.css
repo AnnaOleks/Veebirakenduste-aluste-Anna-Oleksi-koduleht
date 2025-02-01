@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Comic Sans MS", cursive;
+    background: #e6e6e6;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+    font-variant: small-caps;
+    border: double 5px black;
+    background-image: url("../content/Untitled.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+.container {
+    display: flex;
+
+}
+.menu{
+    background-color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 180px;
+    line-height: 1;
+    color: white;
+    overflow: visible;
+    height: 100%;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 30px;
+}
+.menu ul{
+    list-style-type: none;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    position: sticky;
+    width: 170px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    background: slategray;
+    transition: all 0.3s ease;
+    width: 170px;
+}
+.menu li{
+    position: relative;
+}
+.menu li:hover > .dropdown{
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    left: 0;
+}
+.menu ul>li {
+    display: block;
+    padding: 5px ;
+    margin-top: 10px;
+    width: 100px;
+}
+.menu li>a{
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: black;
+    text-align: left;
+    width: 165px;
+}
+.leftcolumn{
+    float: left;
+    width: 170px;
+}
+.rightcolumn{
+    float: left;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+main section{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    border: double 5px black;
+}
+.menu li a.active {
+    background-color: slategray;
+    color: white;
+}
