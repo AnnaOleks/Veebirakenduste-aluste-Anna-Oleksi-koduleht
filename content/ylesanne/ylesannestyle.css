@@ -11,7 +11,7 @@ header{
     font-size: 20px;
     font-variant: small-caps;
     border: double 5px black;
-    background-image: url("../content/Untitled.png");
+    background-image: url("ylesanneContent/Logo.png");
     background-color: white;
     background-repeat: no-repeat;
     background-size: contain;
@@ -25,7 +25,6 @@ a{
 }
 .container {
     display: flex;
-
 }
 .menu{
     background-color: black;
@@ -43,16 +42,23 @@ a{
     color: white;
     display: block;
     height: 30px;
+    background-color: black;
+    padding: 8px 16px;
+    width: 100%;
+}
+.menu li a:hover{
+    text-align: left;
+    width: 165px;
+    background-color: slategray;
 }
 .menu ul{
     list-style-type: none;
     line-height: 1;
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: auto;
     position: sticky;
     width: 170px;
+    overflow: visible;
 }
 .dropdown{
     display: none;
@@ -61,6 +67,10 @@ a{
     background: slategray;
     transition: all 0.3s ease;
     width: 170px;
+    padding: 0;
+    left: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .menu li{
     position: relative;
@@ -70,15 +80,22 @@ a{
     display: block;
     visibility: visible;
     position: absolute;
-    top: 100%;
+    top: 0;
     margin: 0;
-    left: 0;
+    left: 100%;
+    min-width: 180px;
+    z-index: 1000;
+    background-color: black;
+}
+.dropdown li {
+    width: 100%;
+    padding: 5px 10px;
 }
 .menu ul>li {
     display: block;
     padding: 5px ;
     margin-top: 10px;
-    width: 100px;
+    width: 165px;
 }
 .menu li>a{
     display: block;
@@ -87,11 +104,7 @@ a{
     padding: 8px 16px;
     text-decoration: none;
 }
-.menu li a:hover{
-    background-color: black;
-    text-align: left;
-    width: 165px;
-}
+
 .leftcolumn{
     float: left;
     width: 170px;
@@ -117,7 +130,4 @@ footer {
     clear: both;
     border: double 5px black;
 }
-.menu li a.active {
-    background-color: slategray;
-    color: white;
-}
+

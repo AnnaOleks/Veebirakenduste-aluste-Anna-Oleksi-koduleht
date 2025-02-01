@@ -7,7 +7,7 @@ header{
     font-size: 20px;
     font-variant: small-caps;
     border: solid 1px slategray;
-    background-image: url("../content/Untitled.png");
+    background-image: url("../content/Untitled.png") right;
     background-color: slategray;
     background-repeat: no-repeat;
     background-size: contain;
