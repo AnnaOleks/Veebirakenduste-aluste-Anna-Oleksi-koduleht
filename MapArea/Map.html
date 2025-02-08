@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map area elemendid HTML</title>
+    <link rel="stylesheet" href="mapStyle.css">
+</head>
+<body>
+<h1>Map ootab hiire klicki!</h1>
+<img src="Mappilt.png" alt="pilt" usemap="#pilt">
+<map name="pilt">
+    <!--circle coors=x,y,R-->
+    <area shape="circle" coords="412, 86, 75" href="ring.html" alt="ring">
+    <!--rect coors=x1,y1,x2,y2-->
+    <area shape="rect" coords="343, 155, 170, 277" href="rect.html" alt="rect">
+    <!--poly coors=x1,y1,x2,y2, x3, x4-->
+    <area shape="poly" coords="16, 370, 107, 232, 196, 370" href="poly.html" alt="poly">
+</map>
+<div id="kirjeldus">Siia tuleb kirjeldus</div>
+</body>
+</html>

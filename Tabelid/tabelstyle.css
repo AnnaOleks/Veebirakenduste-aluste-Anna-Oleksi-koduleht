@@ -1,0 +1,251 @@
+/*********************<table id=tabel1>*********************/
+table#tabel1{ /*html failis table id=tabel1*/
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse; /*ühine ääris*/
+}
+#tabel1 td{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+#tabel1 tr:nth-child(1) td:nth-child(1) {
+    /*1.rida 1.lahter*/
+    background-color: #5b6870;
+}
+#tabel1 tr:nth-child(1) td:nth-child(2) {
+    /*1.rida 2.lahter*/
+    background-color: #71818b;
+}
+#tabel1 tr:nth-child(2) td:nth-child(1) {
+    /*2.rida 1.lahter*/
+    background-color: #8c99a1;
+}
+#tabel1 tr:nth-child(2) td:nth-child(2) {
+    /*2.rida 2.lahter*/
+    background-color: #a7b1b7;
+}
+/*********************<table id=tabel2>*********************/
+table#tabel2{ /*html failis table id=tabel1*/
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    /*border-collapse: collapse; /*ühine ääris*/
+}
+#tabel2 td{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+#tabel2 tr:nth-child(1) td:nth-child(1) {
+    /*1.rida 1.lahter*/
+    background-color: #5b6870;
+}
+#tabel2 tr:nth-child(1) td:nth-child(2) {
+    /*1.rida 2.lahter*/
+    background-color: #71818b;
+}
+#tabel2 tr:nth-child(2) td:nth-child(1) {
+    /*2.rida 1.lahter*/
+    background-color: #8c99a1;
+}
+/*********************<table id=tabel3>*********************/
+table#tabel3{ /*html failis table id=tabel1*/
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    /*border-collapse: collapse; /*ühine ääris*/
+}
+#tabel3 td{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+#tabel3 tr:nth-child(1) td:nth-child(1) {
+    /*1.rida 1.lahter*/
+    background-color: #5b6870;
+}
+#tabel3 tr:nth-child(1) td:nth-child(2) {
+    /*1.rida 2.lahter*/
+    background-color: #71818b;
+}
+#tabel3 tr:nth-child(2) td:nth-child(1) {
+    /*2.rida 1.lahter*/
+    background-color: #8c99a1;
+}
+/*********************<table id=tabel4>*********************/
+table#tabel4{ /*html failis table id=tabel1*/
+    width: 30%;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    /*border-collapse: collapse; /*ühine ääris*/
+}
+#tabel4 td{
+    width: 33%;
+    text-align: center;
+    border: 1px solid black;
+}
+#tabel4 tr:nth-child(1) td:nth-child(1) {
+    /*1.rida 1.lahter*/
+    background-color: #5b6870;
+}
+#tabel4 tr:nth-child(1) td:nth-child(2) {
+    /*1.rida 2.lahter*/
+    background-color: #71818b;
+}
+#tabel4 tr:nth-child(1) td:nth-child(3) {
+    /*1.rida 3.lahter*/
+    background-color: #8c99a1;
+}
+#tabel4 tr:nth-child(2) td:nth-child(1) {
+    /*2.rida 1.lahter*/
+    background-color: #a7b1b7;
+}
+#tabel4 tr:nth-child(3) td:nth-child(1) {
+    /*3.rida 1.lahter*/
+    background-color: #c2c9cd;
+}
+#tabel4 tr:nth-child(3) td:nth-child(2) {
+    /*3.rida 2.lahter*/
+    background-color: #dde1e3;
+}
+/*********************<table id=Eesti>*********************/
+#Eesti{
+    width: 330px;
+    height: 210px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#Eesti tr:nth-child(1){
+    background-color: blue;
+    height: 70px;
+}
+#Eesti tr:nth-child(2){
+    background-color: black;
+    height: 70px;
+}
+/*********************<table id=Belgia>*********************/
+#Belgia{
+    width: 330px;
+    height: 210px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#Belgia tr:nth-child(1) td:nth-child(1){
+    background-color: black;
+    width: 110px;
+}
+#Belgia tr:nth-child(1) td:nth-child(2){
+    background-color: gold;
+    width: 110px;
+}
+#Belgia tr:nth-child(1) td:nth-child(3){
+    background-color: red;
+    width: 110px;
+}
+/*********************<table id=Rootsi>*********************/
+#Rootsi {
+    width: 330px;
+    height: 210px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#Rootsi tr:nth-child(1) td:nth-child(1) {
+    background-color: #1c3f72;
+    width: 105px;
+    height: 85px;
+    border: 1px solid gray;
+}
+#Rootsi tr:nth-child(1) td:nth-child(2) {
+    background-color: gold;
+    width: 40px;
+    height: 40px;
+}
+#Rootsi tr:nth-child(1) td:nth-child(3) {
+    background-color: #1c3f72;
+    width: 185px;
+    height: 85px;
+    border: 1px solid gray;
+}
+#Rootsi tr:nth-child(2) {
+    background-color: gold;
+    width: 40px;
+    height: 40px;
+}
+#Rootsi tr:nth-child(3) td:nth-child(1) {
+    background-color: #1c3f72;
+    width: 105px;
+    height: 85px;
+    border: 1px solid gray;
+}
+#Rootsi tr:nth-child(3) td:nth-child(2) {
+    background-color: #1c3f72;
+    width: 185px;
+    height: 85px;
+    border: 1px solid gray;
+}
+/*********************<table id=Rootsi>*********************/
+#Sveitsi {
+    width: 330px;
+    height: 210px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#Sveitsi tr:nth-child(1){
+    background-color: red;
+    height: 42px;
+}
+#Sveitsi tr:nth-child(2) td:nth-child(1) {
+    background-color: red;
+    height: 42px;
+    width: 144px;
+}
+#Sveitsi tr:nth-child(2) td:nth-child(2) {
+    background-color: white;
+    height: 42px;
+    width: 42px;
+}
+#Sveitsi tr:nth-child(2) td:nth-child(3) {
+    background-color: red;
+    height: 42px;
+    width: 144px;
+}
+#Sveitsi tr:nth-child(3) td:nth-child(1) {
+    background-color: red;
+    height: 42px;
+    width: 102px;
+}
+#Sveitsi tr:nth-child(3) td:nth-child(2) {
+    background-color: white;
+    height: 42px;
+    width: 126px;
+}
+#Sveitsi tr:nth-child(3) td:nth-child(3) {
+    background-color: red;
+    height: 42px;
+    width: 102px;
+}
+#Sveitsi tr:nth-child(4) td:nth-child(1) {
+    background-color: red;
+    height: 42px;
+    width: 144px;
+}
+#Sveitsi tr:nth-child(4) td:nth-child(2) {
+    background-color: white;
+    height: 42px;
+    width: 42px;
+}
+#Sveitsi tr:nth-child(4) td:nth-child(3) {
+    background-color: red;
+    height: 42px;
+    width: 144px;
+}
+#Sveitsi tr:nth-child(5){
+    background-color: red;
+    height: 42px;
+}
