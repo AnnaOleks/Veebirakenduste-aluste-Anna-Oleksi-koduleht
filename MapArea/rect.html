@@ -6,16 +6,72 @@
     <link rel="stylesheet" href="mapStyle.css">
 </head>
 <body>
-<h1>Map ootab hiire klicki!</h1>
-<img src="Mappilt.png" alt="pilt" usemap="#pilt">
-<map name="pilt">
-    <!--circle coors=x,y,R-->
-    <area shape="circle" coords="412, 86, 75" href="ring.html" alt="ring">
-    <!--rect coors=x1,y1,x2,y2-->
-    <area shape="rect" coords="343, 155, 170, 277" href="rect.html" alt="rect">
-    <!--poly coors=x1,y1,x2,y2, x3, x4-->
-    <area shape="poly" coords="16, 370, 107, 232, 196, 370" href="poly.html" alt="poly">
-</map>
-<div id="kirjeldus">See on ilus rectangle</div>
+<header>
+    <!--<img src="content/Untitled.png" alt="logo">-->
+    <h1>Veebirakenduste aluste <br>
+        Anna Oleksi koduleht</h1>
+</header>
+<!--naveegimismenüü-->
+<div class="container">
+    <div class="leftcolumn">
+        <nav class="menu">
+            <ul>
+                <li><a href="../content/ylesanne/index.html">Avaleht</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
+                    <ul class="dropdown">
+                        <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
+                        <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
+                    </ul>
+                </li>
+                <li><a href="../content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--sisu-->
+    <main class="rightcolumn">
+        <section>
+            <h2>Map ootab hiire klicki!</h2>
+            <img src="Mappilt.png" alt="pilt" usemap="#pilt">
+            <map name="pilt">
+                <!--circle coors=x,y,R-->
+                <area shape="circle" coords="412, 86, 75" href="ring.html" alt="ring">
+                <!--rect coors=x1,y1,x2,y2-->
+                <area shape="rect" coords="343, 155, 170, 277" href="rect.html" alt="rect">
+                <!--poly coors=x1,y1,x2,y2, x3, x4-->
+                <area shape="poly" coords="16, 370, 107, 232, 196, 370" href="poly.html" alt="poly">
+            </map>
+            <div id="kirjeldus">See on ilus rectangle</div>
+            <br>
+        </section>
+        <section>
+            <h1>Klicki elemendile!</h1>
+            <img src="Mappilt2.png" alt="pilt2" usemap="#pilt2">
+            <map name="pilt2">
+                <area shape="circle" coords="62, 90, 19" href="lill.html" alt="lill">
+                <area shape="rect" coords="92, 180, 60, 123" href="markmik.html" alt="markmik">
+                <area shape="rect" coords="98, 133, 103, 186" href="pastakas.html" alt="pastakas">
+                <area shape="poly" coords="113,234,134,203,134,193,137,169,136,158,133,146,133,134,138,131,141,152,142,134,147,122,151,126,149,145,150,153,151,138,154,119,159,121,159,132,158,149,160,150,163,139,167,126,172,126,171,133,169,144,168,169,171,159,180,155,181,158,174,169,172,178,160,193,146,235" href="vasakkasi.html" alt="vasakkasi">
+                <area shape="poly" coords="284,235,285,194,283,178,290,170,287,166,278,169,275,162,281,154,281,150,292,148,303,145,313,168,304,194,303,235" href="paremkasi.html" alt="paremkasi">
+                <area shape="circle" coords="294,125,22" href="kohv.html" alt="kohv">
+                <area shape="poly" coords="119,191,120,100,110,36,259,35,249,99,249,190" href="arvuti.html" alt="arvuti">
+                <area shape="poly" coords="329,146,326,97,354,96,364,106,364,114,370,117,375,124,372,135,377,146" href="leht.html" alt="leht">
+                <area shape="poly" coords="405,143,395,136,390,124,390,119,382,117,378,109,381,101,392,98,401,102,406,97,417,97,425,101,431,107,434,112,435,117,441,119,444,125,444,130,439,136,430,135,425,141,417,144" href="world.html" alt="world">
+                <area shape="poly" coords="453,143,452,136,459,136,459,99,517,99,517,134,522,136,522,141" href="laptop.html" alt="laptop">
+                <area shape="poly" coords="564,110,559,97,560,90,550,83,546,70,526,68,524,65,550,65,554,57,541,42,542,40,558,55,570,50,570,27,574,27,574,51,586,56,604,38,608,40,590,60,591,66,617,64,616,69,593,70,592,79,588,85,582,90,581,99,576,110" href="idee.html" alt="idee">
+                <area shape="poly" coords="557,161,556,156,575,156,574,132,599,132,599,117,623,117,623,95,650,95,651,157,668,156,668,161" href="diagramm.html" alt="diagramm">
+                <area shape="poly" coords="689,149,688,93,730,94,731,106,744,91,759,105,738,134,731,137,731,149" href="kiri.html" alt="kiri">
+                <area shape="circle" coords="790,120,25" href="kontakt.html" alt="kontakt">
+                <area shape="circle" coords="856,122,22" href="eesmark.html" alt="eesmark">
+            </map>
+            <div id="kirjeldus2">Siia tuleb kirjeldus</div>
+        </section>
+    </main>
+</div>
+<!--jalus-->
+<footer>
+    <strong>Kontakt info</strong>
+    leht on välja töödeldud Anna Oleks &copy; 2025
+</footer>
 </body>
 </html>

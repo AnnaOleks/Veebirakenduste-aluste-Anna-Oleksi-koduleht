@@ -249,3 +249,110 @@ table#tabel4{ /*html failis table id=tabel1*/
     background-color: red;
     height: 42px;
 }
+* {
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Comic Sans MS", cursive;
+    background: #e6e6e6;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+    font-variant: small-caps;
+    border: double 5px black;
+    background-image: url("../content/ylesanne/ylesanneContent/Logo.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+.container {
+    display: flex;
+}
+.leftcolumn{
+    float: left;
+    width: 170px;
+    margin: 0;
+}
+.rightcolumn{
+    float: left;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.rightcolumn section{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.menu{
+    background-color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 170px;
+    line-height: 1.5;
+    color: white;
+    overflow: visible;
+    height: 100%;
+}
+.menu ul {
+    padding-left: 0;
+}
+.menu ul>li{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.menu li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.menu li a:hover{
+    background-color: slategray;
+    color: white;
+}
+.menu li:hover>ul{
+    display: block;
+}
+.menu li:hover{
+    background-color: slategray;
+    color: white;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.dropdown li a{
+    background-color: slategray;
+}
+.dropdown li:hover a{
+    background-color: black;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    border: double 5px black;
+}
