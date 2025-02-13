@@ -1,0 +1,29 @@
+table#tunnitabel{
+    border: 1px solid #000;
+}
+#tunnitabel td {
+    border: 1px solid #000;
+    width: 20%;
+    height: 60px;
+}
+#tunnitabel tr:nth-child(1) td:nth-child(2) {
+    text-align: center;
+}
+#tunnitabel tr:nth-child(1) td:nth-child(3) {
+    text-align: right;
+}
+#tunnitabel tr:nth-child(3) td:nth-child(2) {
+    text-align: center;
+}
+#tunnitabel tr:nth-child(3) td:nth-child(3) {
+    text-align: right;
+}
+#list{
+    list-style-type: square;
+}
+#Abc{
+    list-style-type: upper-latin;
+}
+#roma{
+    list-style-type: upper-roman;
+}

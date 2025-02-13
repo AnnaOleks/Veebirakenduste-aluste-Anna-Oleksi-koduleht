@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Laste küsimustik</title>
+    <link rel="stylesheet" href="vormStyle.css">
+</head>
+<body>
+<h1>Laste küsimustik</h1>
+<form action="" name="lasteKys">
+    <table border="1">
+        <tr>
+            <td><label for="nimi">Sisesta nimi:</label></td>
+            <td><input type="text" id="nimi" name="nimi" placeholder="Eesnimi"></td>
+        </tr>
+        <tr>
+            <td><label for="vanus">Vanus</label></td>
+            <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <!--radio nupp - Üks valik mitmest-->
+                    <legend>Vali oma sugu:</legend>
+                    <label for="poiss">poiss</label>
+                    <input type="radio" id="poiss" name="sugu">
+                    <label for="tydruk">tüdruk</label>
+                    <input type="radio" id="tydruk" name="sugu">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>Mis lapsele meeldib?</td>
+            <td>
+                <!--checkbox-->
+                <input type="checkbox" id="coca" name="meeldib" value="Coca-Cola" checked>
+                <label for="coca">Coca-Cola</label>
+                <br>
+                <input type="checkbox" id="kala" name="meeldib" value="Väike kala">
+                <label for="kala">Väike kala</label>
+                <br>
+                <input type="checkbox" id="lemon" name="meeldib" value="Lemon">
+                <label for="lemon">Lemon</label>
+                <br>
+                <input type="checkbox" id="talv" name="meeldib" value="Talv">
+                <label for="talv">Talv</label>
+                <br>
+                <input type="checkbox" id="koer" name="meeldib" value="Koer">
+                <label for="koer">Koerad</label>
+                <br>
+                <input type="checkbox" id="kass" name="meeldib" value="Kassid">
+                <label for="kass">Kassid</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="kool">Mis koolis sa õpid</label></td>
+            <td>
+                <select name="kool" id="kool">
+                    <option value="algkool">algkool</option>
+                    <option value="põhikool">põhikool</option>
+                    <option value="lasteaed">lateaed</option>
+                    <option value="gümnaasium">gümnaasium</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Salvesta"></td>
+            <td><input type="reset" value="Puhasta"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
