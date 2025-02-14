@@ -1,10 +1,10 @@
 div#kirjeldus{
-    width: 300px;
-    height: 430px;
+    width: 210px;
+    height: 410px;
     padding: 10px;
     position: absolute;
-    top: 250px;
-    left: 1150px;
+    top: 220px;
+    left: 1130px;
     border: 3px double #59656d;
     text-align: center;
     justify-content: center;
@@ -13,12 +13,12 @@ div#kirjeldus{
     background-color: #e6e6e6;
 }
 div#kirjeldus2{
-    width: 300px;
-    height: 235px;
+    width: 210px;
+    height: 237px;
     padding: 10px;
     position: absolute;
-    top: 835px;
-    left: 1150px;
+    top: 780px;
+    left: 1130px;
     border: 3px double #59656d;
     text-align: center;
     justify-content: center;
@@ -31,18 +31,24 @@ div#kirjeldus2{
 
 }
 body{
-    font-family: "Comic Sans MS", cursive;
+    font-family: Lato;
     background: #e6e6e6;
 }
+
 header{
     text-align: center;
     font-size: 20px;
-    font-variant: small-caps;
-    border: double 5px black;
-    background-image: url("../content/ylesanne/ylesanneContent/Logo.png");
+    font-variant: all-petite-caps;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("../content/ylesanne/ylesanneContent/logo2.png");
     background-color: white;
     background-repeat: no-repeat;
     background-size: contain;
+    color: black;
+    font-family: Lato;
+    border: double 5px #e6e6e6;
+    text-shadow: 3px 3px 3px #ababab;
 }
 header h1{
     letter-spacing: 0.1cm;
@@ -66,10 +72,12 @@ a{
 }
 .rightcolumn section{
     background-color: white;
+    border: 6px double #e6e6e6;
     padding: 20px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    border-radius: 30px;
 }
 .menu{
     background-color: black;
@@ -119,10 +127,10 @@ a{
     transition: all 0.3s ease;
 }
 .dropdown li a{
-    background-color: slategray;
+    background-color: black;
 }
 .dropdown li:hover a{
-    background-color: black;
+    background-color: slategray;
 }
 footer {
     background-color: white;
@@ -131,5 +139,5 @@ footer {
     width: 100%;
     position: relative;
     clear: both;
-    border: double 5px black;
+    border: double 5px #e6e6e6;
 }
