@@ -55,7 +55,7 @@ table#tabel2{ /*html failis table id=tabel1*/
 }
 /*********************<table id=tabel3>*********************/
 table#tabel3{ /*html failis table id=tabel1*/
-    width: 30%;
+    width: 40%;
     height: 100px;
     text-align: center;
     border: 1px solid black;
@@ -80,7 +80,7 @@ table#tabel3{ /*html failis table id=tabel1*/
 }
 /*********************<table id=tabel4>*********************/
 table#tabel4{ /*html failis table id=tabel1*/
-    width: 30%;
+    width: 40%;
     height: 100px;
     text-align: center;
     border: 1px solid black;
