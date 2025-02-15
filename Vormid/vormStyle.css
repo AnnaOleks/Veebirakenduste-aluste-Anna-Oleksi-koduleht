@@ -7,49 +7,107 @@ table{
 td{
     padding: 2%;
 }
+table tr:nth-child(18){
+    text-align: center;
+}
 input[type=text], input[type=number]{
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 10px;
-    color:white;
-    background-color: #cccccc;
+    padding: 5px;
+    color:black;
+    background-color: #e6e6e6;
+    width: 100%;
+}
+input[type=email]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    color:black;
+    background-color: #e6e6e6;
+    width: 100%;
+}
+input[type=tel]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    color:black;
+    background-color: #e6e6e6;
+    width: 100%;
+}
+input[type=date]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+    background-color: #e6e6e6;
+    color: gray;
+}
+input[type=date]:hover{
+    color: black;
 }
 input[type=radio]:hover /* +label */{
-    background-color: #dddddd;
-    font-size: 20px;
-    padding: 10px;
-    width: 30px;
-    height: 40px;
+    background-color: #e6e6e6;
+    padding: 15px;
+    cursor: pointer;
+}
+input[type=radio] {
+    accent-color: slategray;
+}
+select#kool{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 28px;
+    border-radius: 4px;
+    border-color: #ccc;
+    color: gray;
+}
+select#kool:hover{
+    color: black;
+}
+input[type=range]{
+    border-color: #ccc;
+    width: 100%;
+    accent-color: slategray;
 }
 input[type=checkbox]+label{
-    background-color: lightblue;
+    background-color: #e6e6e6;
     font-size: 15px;
-    padding: 10px;
-    width: 10px;
-    height: 20%;
-    border: 1px solid red;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
     cursor: pointer;
-    line-height: 52px;
+    line-height: 35px;
+    border-radius: 4px;
+}
+input[type=color]{
+    border-color: #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+input[type=checkbox] {
+    accent-color: slategray; /* Это изменит цвет чекбокса */
 }
 input[type=reset], input[type=button] {
-    border: 1px solid #ccc;
+    border: 1px solid slategray;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 10px;
-    color: white;
-    background-color: #cccccc;
+    color: black;
+    background-color: #e6e6e6;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
 }
 * {
     box-sizing: border-box;
-
 }
 body{
-    font-family: Lato;
+    font-family: 'Lato', serif;
     background: #e6e6e6;
 }
-
 header{
-    text-align: center;
     font-size: 20px;
     font-variant: all-petite-caps;
     padding-top: 5px;
@@ -59,9 +117,10 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     color: black;
-    font-family: Lato;
+    font-family: 'Lato', serif;
     border: double 5px #e6e6e6;
     text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
 }
 header h1{
     letter-spacing: 0.1cm;
@@ -153,4 +212,20 @@ footer {
     position: relative;
     clear: both;
     border: double 5px #e6e6e6;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+.dropdown2 li a{
+    background-color: black;
+}
+.dropdown2 li:hover a{
+    background-color: black;
 }

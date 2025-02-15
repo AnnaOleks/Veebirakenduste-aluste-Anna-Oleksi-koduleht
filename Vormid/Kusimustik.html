@@ -16,15 +16,28 @@
     <div class="leftcolumn">
         <nav class="menu">
             <ul>
-                <li><a href="#">Avaleht</a></li>
-                <li><a href="ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="../content/ylesanne/index.html">Avaleht</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
                 <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
                     <ul class="dropdown">
                         <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
                         <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
                     </ul>
                 </li>
-                <li><a href="ylesanneContent/yltood.html">Tehtud tööd</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a>
+                    <ul class="dropdown">
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">HTML/CSS tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../MapArea/Map.html">Map</a></li>
+                                <li><a href="../Tabelid/Tabelid.html">Tabelid</a></li>
+                                <li><a href="../Tunnitoo/index.html">Tabel lehest - Tunnitöö</a></li>
+                                <li><a href="../Tunnitoo/Tunnitoostyle/index.html">Tabel lehest + CSS - Tunnitöö</a></li>
+                                <li><a href="Kusimustik.html">Küsimustik</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">JavaScript tööd</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
@@ -33,20 +46,49 @@
         <section>
             <h1>Laste küsimustik</h1>
             <form action="" name="lasteKys">
-                <table border="1">
+                <table>
                     <tr>
-                        <td><label for="nimi">Sisesta nimi:</label></td>
-                        <td><input type="text" id="nimi" name="nimi" placeholder="Eesnimi"></td>
+                        <td colspan="2"><strong>Vanema andmed</strong></td>
                     </tr>
                     <tr>
-                        <td><label for="vanus">Vanus</label></td>
+                        <td><label for="vaneesnimi">Vanema eesnimi:</label></td>
+                        <td><input type="text" id="vaneesnimi" name="nimi" placeholder="Eesnimi"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vanperenimi">Vanema Perenimi:</label></td>
+                        <td><input type="text" id="vanperenimi" name="perenimi" placeholder="Perenimi"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telefon:</label></td>
+                        <td><input type="tel" id="tel" name="tel" placeholder="+372"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><strong>Lapse andmed</strong></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nimi">Lapse nimi:</label></td>
+                        <td><input type="text" id="nimi" name="nimi" placeholder="Eesnimi Perenimi"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vanus">Lapse vanus:</label></td>
                         <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="syn">Lapse sünnipäev:</label></td>
+                        <td><input type="date" id="syn" name="syn"></td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             <fieldset>
                                 <!--radio nupp - Üks valik mitmest-->
-                                <legend>Vali oma sugu:</legend>
+                                <legend>Lapse sugu:</legend>
                                 <label for="poiss">poiss</label>
                                 <input type="radio" id="poiss" name="sugu">
                                 <label for="tydruk">tüdruk</label>
@@ -55,43 +97,65 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Mis lapsele meeldib?</td>
-                        <td>
-                            <!--checkbox-->
-                            <input type="checkbox" id="coca" name="meeldib" value="Coca-Cola" checked>
-                            <label for="coca">Coca-Cola</label>
-                            <br>
-                            <input type="checkbox" id="kala" name="meeldib" value="Väike kala">
-                            <label for="kala">Väike kala</label>
-                            <br>
-                            <input type="checkbox" id="lemon" name="meeldib" value="Lemon">
-                            <label for="lemon">Lemon</label>
-                            <br>
-                            <input type="checkbox" id="talv" name="meeldib" value="Talv">
-                            <label for="talv">Talv</label>
-                            <br>
-                            <input type="checkbox" id="koer" name="meeldib" value="Koer">
-                            <label for="koer">Koerad</label>
-                            <br>
-                            <input type="checkbox" id="kass" name="meeldib" value="Kassid">
-                            <label for="kass">Kassid</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="kool">Mis koolis sa õpid</label></td>
+                        <td><label for="kool">Mis koolis laps õpib</label></td>
                         <td>
                             <select name="kool" id="kool">
+                                <option value="lasteaed">lateaed</option>
                                 <option value="algkool">algkool</option>
                                 <option value="põhikool">põhikool</option>
-                                <option value="lasteaed">lateaed</option>
                                 <option value="gümnaasium">gümnaasium</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
+                        <td><label for="meel">Kui rahulik on laps:</label></td>
+                        <td><input type="range" id="meel" name="meel" min="0" max="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Millega lapsele meeldib tegeleda?</td>
+                        <td>
+                            <!--checkbox-->
+                            <input type="checkbox" id="passiv" name="meeldib" value="passiv" checked>
+                            <label for="passiv">Pasiivsed tegevused</label>
+                            <br>
+                            <input type="checkbox" id="lugemine" name="meeldib" value="lugemine">
+                            <label for="lugemine">Lugemine</label>
+                            <br>
+                            <input type="checkbox" id="kasitoo" name="meeldib" value="kasitoo">
+                            <label for="kasitoo">Käsitöö</label>
+                            <br>
+                            <input type="checkbox" id="joonistamine" name="meeldib" value="joonistamine">
+                            <label for="joonistamine">Joonistamine</label>
+                            <br>
+                            <input type="checkbox" id="activ" name="meeldib" value="activ">
+                            <label for="activ">Aktiivsed tegevused</label>
+                            <br>
+                            <input type="checkbox" id="jalutamine" name="meeldib" value="jalutamine">
+                            <label for="jalutamine">Jalutamine</label>
+                            <br>
+                            <input type="checkbox" id="tantsimine" name="meeldib" value="tantsimine">
+                            <label for="tantsimine">Tantsimine</label>
+                            <br>
+                            <input type="checkbox" id="laulmine" name="meeldib" value="laulmine">
+                            <label for="laulmine">Laulmine</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="varv">Lapse lemmik värv:</label></td>
+                        <td><input type="color" id="varv" name="varv" value="#708090"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="foto">Lisa lapse foto:</label></td>
+                        <td><input type="file" id="foto" name="foto"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
                         <td><input type="button" value="Salvesta"></td>
                         <td><input type="reset" value="Puhasta"></td>
                     </tr>
+
                 </table>
             </form>
         </section>

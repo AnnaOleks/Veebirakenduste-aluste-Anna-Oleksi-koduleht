@@ -3,12 +3,10 @@
 
 }
 body{
-    font-family: Lato;
+    font-family: 'Lato', serif;
     background: #e6e6e6;
 }
-
 header{
-    text-align: center;
     font-size: 20px;
     font-variant: all-petite-caps;
     padding-top: 5px;
@@ -18,9 +16,10 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     color: black;
-    font-family: Lato;
+    font-family: 'Lato', serif;
     border: double 5px #e6e6e6;
     text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
 }
 header h1{
     letter-spacing: 0.1cm;
@@ -112,4 +111,20 @@ footer {
     position: relative;
     clear: both;
     border: double 5px #e6e6e6;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+.dropdown2 li a{
+    background-color: black;
+}
+.dropdown2 li:hover a{
+    background-color: black;
 }
