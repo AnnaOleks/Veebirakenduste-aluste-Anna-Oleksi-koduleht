@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Laste küsimustik</title>
     <link rel="stylesheet" href="vormStyle.css">
+    <script src="KysJS.js"></script>
 </head>
 <body>
 <!--päis-->
@@ -48,41 +49,48 @@
             <form action="" name="lasteKys">
                 <table>
                     <tr>
-                        <td colspan="2"><strong>Vanema andmed</strong></td>
+                        <td colspan="3"><strong>Vanema andmed</strong></td>
                     </tr>
                     <tr>
                         <td><label for="vaneesnimi">Vanema eesnimi:</label></td>
-                        <td><input type="text" id="vaneesnimi" name="nimi" placeholder="Eesnimi"></td>
+                        <td><input type="text" id="vaneesnimi" name="nimi" placeholder="Eesnimi" oninput="vaneesnimiJS()"></td>
+                        <td><div id="vastus"></div></td>
                     </tr>
                     <tr>
                         <td><label for="vanperenimi">Vanema Perenimi:</label></td>
-                        <td><input type="text" id="vanperenimi" name="perenimi" placeholder="Perenimi"></td>
+                        <td><input type="text" id="vanperenimi" name="perenimi" placeholder="Perenimi" oninput="vanperenimiJS()"></td>
+                        <td><div id="vastus2"></div></td>
                     </tr>
                     <tr>
                         <td><label for="email">E-mail:</label></td>
-                        <td><input type="email" id="email" name="email" placeholder="E-mail"></td>
+                        <td><input type="email" id="email" name="email" placeholder="E-mail" oninput="emailJS()"></td>
+                        <td><div id="vastus3"></div></td>
                     </tr>
                     <tr>
                         <td><label for="tel">Telefon:</label></td>
-                        <td><input type="tel" id="tel" name="tel" placeholder="+372"></td>
+                        <td><input type="tel" id="tel" name="tel" placeholder="+372" oninput="telJS()"></td>
+                        <td><div id="vastus4"></div></td>
                     </tr>
                     <tr>
-                        <td colspan="2"></td>
+                        <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><strong>Lapse andmed</strong></td>
+                        <td colspan="3"><strong>Lapse andmed</strong></td>
                     </tr>
                     <tr>
                         <td><label for="nimi">Lapse nimi:</label></td>
-                        <td><input type="text" id="nimi" name="nimi" placeholder="Eesnimi Perenimi"></td>
+                        <td><input type="text" id="nimi" name="nimi" placeholder="Eesnimi Perenimi" oninput="nimiJS()"></td>
+                        <td><div id="vastus5"></div></td>
                     </tr>
                     <tr>
                         <td><label for="vanus">Lapse vanus:</label></td>
-                        <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1"></td>
+                        <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1" on oninput="vanusJS()"></td>
+                        <td><div id="vastus6"></div></td>
                     </tr>
                     <tr>
                         <td><label for="syn">Lapse sünnipäev:</label></td>
                         <td><input type="date" id="syn" name="syn"></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -90,22 +98,25 @@
                                 <!--radio nupp - Üks valik mitmest-->
                                 <legend>Lapse sugu:</legend>
                                 <label for="poiss">poiss</label>
-                                <input type="radio" id="poiss" name="sugu">
+                                <input type="radio" id="poiss" name="sugu" value="poiss" onchange="suguJS()">
                                 <label for="tydruk">tüdruk</label>
-                                <input type="radio" id="tydruk" name="sugu">
+                                <input type="radio" id="tydruk" name="sugu" value="tüdruk" onchange="suguJS()">
                             </fieldset>
                         </td>
+                        <td><div id="vastus8"></div></td>
                     </tr>
                     <tr>
                         <td><label for="kool">Mis koolis laps õpib</label></td>
                         <td>
-                            <select name="kool" id="kool">
+                            <select name="kool" id="kool" onchange="koolJS()">
+                                <option value="">vali...</option>
                                 <option value="lasteaed">lateaed</option>
                                 <option value="algkool">algkool</option>
                                 <option value="põhikool">põhikool</option>
                                 <option value="gümnaasium">gümnaasium</option>
                             </select>
                         </td>
+                        <td><div id="vastus9"></div></td>
                     </tr>
                     <tr>
                         <td><label for="meel">Kui rahulik on laps:</label></td>
