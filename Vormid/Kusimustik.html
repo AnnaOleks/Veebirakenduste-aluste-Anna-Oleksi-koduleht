@@ -84,13 +84,13 @@
                     </tr>
                     <tr>
                         <td><label for="vanus">Lapse vanus:</label></td>
-                        <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1" on oninput="vanusJS()"></td>
+                        <td><input type="number" id="vanus" name="vanus" min="3" max="15" step="1" oninput="vanusJS()"></td>
                         <td><div id="vastus6"></div></td>
                     </tr>
                     <tr>
                         <td><label for="syn">Lapse sünnipäev:</label></td>
-                        <td><input type="date" id="syn" name="syn"></td>
-                        <td></td>
+                        <td><input type="date" id="syn" name="syn" oninput="synJS()"></td>
+                        <td><div id="vastus11"></div></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -120,7 +120,8 @@
                     </tr>
                     <tr>
                         <td><label for="meel">Kui rahulik on laps:</label></td>
-                        <td><input type="range" id="meel" name="meel" min="0" max="50"></td>
+                        <td><input type="range" id="meel" name="meel" min="0" max="10" oninput="meelJS()"></td>
+                        <td><div id="vastus12"></div></td>
                     </tr>
                     <tr>
                         <td>Millega lapsele meeldib tegeleda?</td>
@@ -153,22 +154,28 @@
                     </tr>
                     <tr>
                         <td><label for="varv">Lapse lemmik värv:</label></td>
-                        <td><input type="color" id="varv" name="varv" value="#708090"></td>
+                        <td><input type="color" id="varv" name="varv" value="#708090" oninput="varvJS()"></td>
+                        <td><div id="vastus10"></div></td>
                     </tr>
                     <tr>
                         <td><label for="foto">Lisa lapse foto:</label></td>
                         <td><input type="file" id="foto" name="foto"></td>
+                        <td div="vastus13"></td>
                     </tr>
                     <tr>
                         <td colspan="2"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="Salvesta"></td>
-                        <td><input type="reset" value="Puhasta"></td>
+                        <td><input type="button" value="Salvesta" onclick="salvestaJS()"></td>
+                        <td><input type="reset" value="Puhasta" onclick="puhastaJS()"></td>
                     </tr>
 
                 </table>
             </form>
+        </section>
+        <section>
+            <h1>Küsimustiku vastused</h1>
+            <div id="vastused"></div>
         </section>
     </main>
 </div>

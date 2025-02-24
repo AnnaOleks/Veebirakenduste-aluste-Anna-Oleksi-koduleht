@@ -1,3 +1,55 @@
+
+div#vastus{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus2{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus3{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus4{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus5{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus6{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus7{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus8{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus9{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus10{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus11{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastus12{
+    border-left: 5px solid slategray;
+    padding: 5px;
+}
+div#vastused{
+    line-height: 2;
+}
 table{
     border-collapse: collapse;
     border: 1px solid slategray;
@@ -7,9 +59,7 @@ table{
 td{
     padding: 2%;
 }
-table tr:nth-child(18){
-    text-align: center;
-}
+
 input[type=text], input[type=number]{
     border: 1px solid #ccc;
     border-radius: 4px;
