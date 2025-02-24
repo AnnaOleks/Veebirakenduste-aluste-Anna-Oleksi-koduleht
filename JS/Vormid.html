@@ -2,50 +2,103 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Vormist lugemine JS abil</title>
-
+    <title>Anna Oleks koduleht</title>
+    <link rel="stylesheet" href="../Vormid/vormStyle.css">
 </head>
 <body>
-<script src="lugemine.js"></script>
-<h1>Vormist lugemine JS abil</h1>
-
-<label for="varv">Vali värv:</label>
-<input type="color" id ="varv">
-<br>
-<br>
-<label for="nimi">Nimi:</label>
-<input type="text" id="nimi" name="nimi" oninput="tekstLugemine()">
-<div id="vastus"></div>
-<br>
-<input type="button" value="OK" onclick="nuppVajutamine()">
-<div id="vastus2"></div>
-<br>
-<!--radio nupp-->
-<input type="radio" id="jah" name="kusimus" value="jah" onchange="radionupp()">
-<label for="jah">jah</label>
-<br>
-<input type="radio" id="ei" name="kusimus" value="ei" onchange="radionupp()">
-<label for="ei">ei</label>
-<br>
-<img src="" alt="" id="pilt">
-<br>
-<input type="button" value="Radio Click" onclick="radionupp()">
-<div id="vastus3"></div>
-<br>
+<!--päis-->
+<header>
+    <!--<img src="Untitled.png" alt="logo">-->
+    <h1>Veebirakenduste aluste Anna Oleksi koduleht</h1>
+    <script src="lugemine.js"></script>
+</header>
 
 
-<!--select-->
-<label for="valik">Tee oma valik:</label>
-<select name="valik" id="valik" onchange="selectValik()">
-  <option value="">vali...</option>
-  <option value="õpilane">õpilane</option>
-  <option value="õpetaja">õpetaja</option>
-  <option value="üliõpilane">üliõpilane</option>
-  <option value="praktikant">praktikant</option>
-</select>
-<div id="vastus4"></div>
-<!--reset nupp в конец-->
-<input type="reset" value="Puhasta" onclick="puhasta()">
+<div class="container">
+    <div class="leftcolumn">
+        <nav class="menu">
+            <ul>
+                <li><a href="../content/ylesanne/index.html">Avaleht</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
+                    <ul class="dropdown">
+                        <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
+                        <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
+                    </ul>
+                </li>
+                <li><a href="../content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a>
+                    <ul class="dropdown">
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">HTML/CSS tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../MapArea/Map.html">Map</a></li>
+                                <li><a href="../Tabelid/Tabelid.html">Tabelid</a></li>
+                                <li><a href="../Tunnitoo/index.html">Tabel lehest - Tunnitöö</a></li>
+                                <li><a href="../Tunnitoo/Tunnitoostyle/index.html">Tabel lehest + CSS - Tunnitöö</a></li>
+                                <li><a href="../Vormid/Kusimustik.html">Küsimustik</a></li>
+                                <li><a href="../Deligeerimine/Delindex.html">Deligeerimine</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">JavaScript tööd</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--sisu-->
+    <main class="rightcolumn">
+        <section>
+            <h2>Vormist lugemine JS abil</h2>
+            <table>
+                <tr>
+                    <td>
+                        <label for="varv">Vali värv:</label>
+                        <input type="color" id ="varv">
+                        <br>
+                        <br>
+                        <label for="nimi">Nimi:</label>
+                        <input type="text" id="nimi" name="nimi" oninput="tekstLugemine()">
+                        <div id="vastus"></div>
+                        <br>
+                        <input type="button" value="OK" onclick="nuppVajutamine()">
+                        <div id="vastus2"></div>
+                        <br>
+                        <!--radio nupp-->
+                        <input type="radio" id="jah" name="kusimus" value="jah" onchange="radionupp()">
+                        <label for="jah">jah</label>
+                        <br>
+                        <input type="radio" id="ei" name="kusimus" value="ei" onchange="radionupp()">
+                        <label for="ei">ei</label>
+                        <br>
+                        <img src="" alt="" id="pilt">
+                        <br>
+                        <input type="button" value="Radio Click" onclick="radionupp()">
+                        <div id="vastus3"></div>
+                        <br>
+
+
+                        <!--select-->
+                        <label for="valik">Tee oma valik:</label>
+                        <select name="valik" id="valik" onchange="selectValik()">
+                            <option value="">vali...</option>
+                            <option value="õpilane">õpilane</option>
+                            <option value="õpetaja">õpetaja</option>
+                            <option value="üliõpilane">üliõpilane</option>
+                            <option value="praktikant">praktikant</option>
+                        </select>
+                        <div id="vastus4"></div>
+                        <!--reset nupp в конец-->
+                        <input type="reset" value="Puhasta" onclick="puhasta()">
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</div>
+<!--jalus-->
+<footer>
+    <strong>Kontakt info</strong>
+    leht on välja töödeldud Anna Oleks &copy; 2025
+</footer>
 </body>
 </html>
 
