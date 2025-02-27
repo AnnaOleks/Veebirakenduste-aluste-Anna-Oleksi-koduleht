@@ -7,7 +7,7 @@ header{
     font-size: 20px;
     font-variant: small-caps;
     border: solid 1px slategray;
-    background-image: url("../content/Untitled.png") right;
+    background-image: url("../content/Untitled.png");
     background-color: slategray;
     background-repeat: no-repeat;
     background-size: contain;
@@ -81,6 +81,7 @@ main section{
     background: slategray;
     transition: all 0.3s ease;
 }
+
 .menu li:hover>ul{
     top: 47px;
     left: 0;
