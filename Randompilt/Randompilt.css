@@ -1,0 +1,226 @@
+table#tabel1{
+    width: 60%;
+}
+#tabel1 tr:nth-child(1) td:nth-child(1) {
+    text-align: left;
+    width:30%;
+    padding: 10px;
+}
+#tabel1 tr:nth-child(1) td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+}
+#tabel1 tr:nth-child(2) td:nth-child(1) {
+    text-align: left;
+    width:30%;
+    padding: 10px;
+}
+#tabel1 tr:nth-child(2) td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+}
+#tabel1 tr:nth-child(3) td:nth-child(1) {
+    text-align: left;
+    width:30%;
+    padding: 10px;
+}
+#tabel1 tr:nth-child(3) td:nth-child(2) {
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+}
+#radio{
+    line-height: 2;
+}
+#vastus{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 10px;
+    border: solid 2px gray;
+    border-radius: 4px;
+}
+input[type=button] {
+    background-color: #e6e6e6;
+    font-family: 'Lato', serif;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px;
+    border: solid 2px gray;
+    width: 100%;
+    color: gray;
+}
+input[type=button]:hover {
+    color: black;
+}
+#randomPilt{
+    width:100%;
+    height:100%;
+}
+input[type=radio] {
+    accent-color: slategray;
+}
+#pilt1{
+    width: 20px;
+    height: 20px;
+}
+#pilt2{
+    width: 20px;
+    height: 20px;
+}
+#pilt3{
+    width: 20px;
+    height: 20px;
+}
+#kogus{
+    font-weight: bold;
+    line-height: 2;
+}
+input[type=number]{
+    background-color: #e6e6e6;
+    font-family: 'Lato', serif;
+    border-radius: 4px;
+    border: solid 2px gray;
+    width: 100%;
+    color: gray;
+}
+input[type=number]:hover{
+    color: black;
+}
+#vastus2{
+    font-family: 'Lato', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', serif;
+    background: #e6e6e6;
+}
+header{
+    font-size: 20px;
+    font-variant: all-petite-caps;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("../content/ylesanne/ylesanneContent/logo2.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    font-family: 'Lato', serif;
+    border: double 5px #e6e6e6;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+.container {
+    display: flex;
+}
+.leftcolumn{
+    float: left;
+    width: 170px;
+    margin: 0;
+}
+.rightcolumn{
+    float: left;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.rightcolumn section{
+    background-color: white;
+    border: 6px double #e6e6e6;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.menu{
+    background-color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 170px;
+    line-height: 1.5;
+    color: white;
+    overflow: visible;
+    height: 100%;
+}
+.menu ul {
+    padding-left: 0;
+}
+.menu ul>li{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.menu li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.menu li a:hover{
+    background-color: slategray;
+    color: white;
+}
+.menu li:hover>ul{
+    display: block;
+}
+.menu li:hover{
+    background-color: slategray;
+    color: white;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.dropdown li a{
+    background-color: black;
+}
+.dropdown li:hover a{
+    background-color: slategray;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    border: double 5px #e6e6e6;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+.dropdown2 li a{
+    background-color: black;
+}
+.dropdown2 li:hover a{
+    background-color: black;
+}
