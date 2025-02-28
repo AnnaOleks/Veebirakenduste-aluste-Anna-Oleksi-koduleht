@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Anna Oleks koduleht</title>
+    <link rel="stylesheet" href="Kalkstyle.css">
+    <script src="KalkJS.js"></script>
+</head>
+<body>
+<!--päis-->
+<header>
+    <!--<img src="content/Untitled.png" alt="logo">-->
+    <h1>Veebirakenduste aluste Anna Oleksi koduleht</h1>
+</header>
+<!--naveegimismenüü-->
+<div class="container">
+    <div class="leftcolumn">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Avaleht</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
+                    <ul class="dropdown">
+                        <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
+                        <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
+                    </ul>
+                </li>
+                <li><a href="../content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a>
+                    <ul class="dropdown">
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">HTML/CSS tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../MapArea/Map.html">Map</a></li>
+                                <li><a href="../Tabelid/Tabelid.html">Tabelid</a></li>
+                                <li><a href="../Tunnitoo/index.html">Tabel lehest - Tunnitöö</a></li>
+                                <li><a href="../Tunnitoo/Tunnitoostyle/index.html">Tabel lehest + CSS - Tunnitöö</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">JavaScript tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../Vormid/Kusimustik.html">Küsimustik</a></li>
+                                <li><a href="../Deligeerimine/Delindex.html">Deligeerimine</a></li>
+                                <li><a href="../Randompilt/myistatus.html">Random pilt</a></li>
+                                <li><a href="#">Kalkulaator</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--sisu-->
+    <main class="rightcolumn">
+        <section>
+            <h2>Auto rent</h2>
+            <br>
+            <table id="autod">
+                <caption><strong>Vali endale auto!</strong></caption>
+                <tr>
+                    <td><img src="img/AudiA5.jpg" alt="Audi" id="audi"></td>
+                    <td><img src="img/BMWm6.jpg" alt="BMW" id="BMW"></td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2">
+                        <p><strong>Sinu valik: </strong></p>
+                        <div id="valik">Siia tuleb pilt!</div>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="auto1" name="autovalik" value="img/AudiA5.jpg" oninput="autovalikJS()">
+                        <label for="auto1">Audi</label>
+                        <p>Hind: 50.50 € / päev<br>
+                            Tagatisraha: 100</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="auto2" name="autovalik" value="img/BMW6.jpg" oninput="autovalikJS()">
+                        <label for="auto2">BMW</label>
+                        <p>Hind: 85 € / päev<br>
+                            Tagatisraha: 100</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/JAGUARXF.jpg" alt="Jaguar" id="jaguar"></td>
+                    <td><img src="img/MercedesCLS63AMG.jpg" alt="Mercedes" id="Merc"></td>
+                    <td rowspan="2">
+                        <p><strong>Vaata, mis auto on vaba (vajuta nuppule): </strong></p>
+                        <input type="button" value="Vaba auto" onclick="vabaauto()">
+                        <br>
+                        <br>
+                        <img src="" alt="Siia tuleb pilt!" id="vabaauto">
+                        <div id="vaba"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="auto3" name="autovalik" value="img/JAGUARXF.jpg" oninput="autovalikJS()">
+                        <label for="auto3">Jaguar</label>
+                        <p>Hind: 100.50 € / päev<br>
+                            Tagatisraha: 150</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="auto4" name="autovalik" value="img/MercedesCLS63AMG.jpg" oninput="autovalikJS()">
+                        <label for="auto4">Mercedes-Benz</label>
+                        <p>Hind: 125€ / päev<br>
+                            Tagatisraha: 150</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/ChevroletCamaro.jpg" alt="Chevrolet" id="chevr"></td>
+                    <td><img src="img/FordMustangV6.jpg" alt="Ford" id="ford"></td>
+                    <td rowspan="2">
+                        <p><strong>Arvuta auto rendi maksumust:</strong></p>
+                        <div id="summa">
+                            <label for="paevad">Mitu päevaks sa autod soovid?</label>
+                            <br>
+                            <br>
+                            <input type="number" id="paevad" min="1" max="30" step="1" onclick="summaArvuta()">
+                        </div>
+                        <br>
+                        <div id="tasumisele">Siia tuleb summa!</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="auto5" name="autovalik" value="img/ChevroletCamaro.jpg" oninput="autovalikJS()">
+                        <label for="auto5">Chevrolet</label>
+                        <p>Hind: 150.50€ / päev<br>
+                            Tagatisraha: 200</p>
+                    </td>
+                    <td>
+                        <input type="radio" id="auto6" name="autovalik" value="img/FordMustangV6.jpg" oninput="autovalikJS()">
+                        <label for="auto6">Ford</label>
+                        <p>Hind: 175€ / päev<br>
+                            Tagatisraha: 200</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</div>
+<!--jalus-->
+<footer>
+    <strong>Kontakt info</strong>
+    leht on välja töödeldud Anna Oleks &copy; 2025
+</footer>
+</body>
+</html>

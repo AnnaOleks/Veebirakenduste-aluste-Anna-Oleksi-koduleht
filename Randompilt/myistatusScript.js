@@ -61,6 +61,6 @@ function radioHindArvuta(){
     } else if(pilt3.checked){
         vastus2.innerHTML=arvuta(kogus.value, pilt3hind)
     } else{
-        vastus2.innerHTML="Vali, mis pilti sa soovid"
+        vastus2.innerHTML="Vali, mis koera sa soovid"
     }
 }

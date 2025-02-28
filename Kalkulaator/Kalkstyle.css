@@ -1,0 +1,256 @@
+#audi{
+    width:300px;
+}
+#audi:active{
+    width:700px;
+}
+#BMW{
+    width:300px;
+}
+#BMW:active{
+    width:700px;
+}
+#jaguar{
+    width:300px;
+}
+#jaguar:active{
+    width:700px;
+}
+#Merc{
+    width:300px;
+}
+#Merc:active{
+    width:700px;
+}
+#chevr{
+    width:300px;
+}
+#chevr:active{
+    width:700px;
+}
+#ford{
+    width:300px;
+}
+#ford:active{
+    width:700px;
+}
+
+table#autod{
+    vertical-align: top;
+}
+#autod tr:nth-child(1) td:nth-child(3){
+    width:30px;
+    border-right: solid 3px slategray;
+}
+#autod tr:nth-child(1) td:nth-child(4){
+    vertical-align: top;
+    padding-left: 30px;
+}
+#autod tr:nth-child(3) td:nth-child(3){
+    vertical-align: top;
+    padding-left: 30px;
+}
+#autod tr:nth-child(5) td:nth-child(3){
+    vertical-align: top;
+    padding-left: 30px;
+}
+input[type=radio] {
+    accent-color: slategray;
+}
+#auto1{
+    width: 20px;
+    height: 20px;
+}
+#auto2{
+    width: 20px;
+    height: 20px;
+}
+#auto3{
+    width: 20px;
+    height: 20px;
+}
+#auto4{
+    width: 20px;
+    height: 20px;
+}
+#auto5{
+    width: 20px;
+    height: 20px;
+}
+#auto6{
+    width: 20px;
+    height: 20px;
+}
+#valik{
+    border: 2px solid gray;
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+#vabaauto{
+    width: 220px;
+}
+input[type=button]{
+    border: 1px solid gray;
+    color: gray;
+    padding: 10px;
+    box-shadow: 2px 2px 8px slategray;
+}
+input[type=button]:hover{
+    color: black;
+}
+#tasumisele{
+    border: 2px solid gray;
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+#vabaauto{
+    border: 2px solid gray;
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+}
+input[type=number]{
+    border: 1px solid gray;
+    color: gray;
+    padding: 10px;
+    box-shadow: 2px 2px 8px slategray;
+}
+input[type=number]:hover{
+    color: black;
+}
+caption{
+    text-align: left;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', serif;
+    background: #e6e6e6;
+}
+header{
+    font-size: 20px;
+    font-variant: all-petite-caps;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("../content/ylesanne/ylesanneContent/logo2.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    font-family: 'Lato', serif;
+    border: double 5px #e6e6e6;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+.container {
+    display: flex;
+}
+.leftcolumn{
+    float: left;
+    width: 170px;
+    margin: 0;
+}
+.rightcolumn{
+    float: left;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.rightcolumn section{
+    background-color: white;
+    border: 6px double #e6e6e6;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.menu{
+    background-color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 170px;
+    line-height: 1.5;
+    color: white;
+    overflow: visible;
+    height: 100%;
+}
+.menu ul {
+    padding-left: 0;
+}
+.menu ul>li{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.menu li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.menu li a:hover{
+    background-color: slategray;
+    color: white;
+}
+.menu li:hover>ul{
+    display: block;
+}
+.menu li:hover{
+    background-color: slategray;
+    color: white;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.dropdown li a{
+    background-color: black;
+}
+.dropdown li:hover a{
+    background-color: slategray;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    border: double 5px #e6e6e6;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+.dropdown2 li a{
+    background-color: black;
+}
+.dropdown2 li:hover a{
+    background-color: black;
+}
