@@ -52,6 +52,64 @@
     <!--sisu-->
     <main class="rightcolumn">
         <section>
+            <h2>Valuuta vahetus</h2>
+            <br>
+            <table id="valuutaost">
+                <caption><strong>Mis valuutat sooid osta?</strong></caption>
+                <tr>
+                    <td colspan="4"> </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Valuuta</td>
+                    <td>Ostu hind</td>
+                    <td rowspan="6"></td>
+                    <td colspan="2">Sinu valik:</td>
+                </tr>
+                <tr>
+                    <td><img src="imgVal/usa.jpg" alt="USA dollar" id="usd"></td>
+                    <td><input type="radio" id="usa" name="valuuta" value="USD" oninput="valuutasoov()">
+                        <label for="usa">USD</label></td>
+                    <td>USA dollar</td>
+                    <td>1.0626</td>
+                    <td><img src="" alt="" id="valuutapilt"></td>
+                    <td><div id="soov"></div></td>
+                </tr>
+                <tr>
+                    <td><img src="imgVal/rus.jpg" alt="Vene rubla" id="rub"></td>
+                    <td><input type="radio" id="rus" name="valuuta" value="RUB" oninput="valuutasoov()">
+                        <label for="rus">RUB</label></td>
+                    <td>Vene rubla</td>
+                    <td>98.3126</td>
+                </tr>
+                <tr>
+                    <td><img src="imgVal/lit.png" alt="Leedu litt" id="ltl"></td>
+                    <td><input type="radio" id="lit" name="valuuta" value="LTL" oninput="valuutasoov()">
+                        <label for="lit">LTL</label></td>
+                    <td>Leedu litt</td>
+                    <td>4.4886</td>
+                    <td colspan="2"><strong>Mitu eurot soovid vahetada (min: 10€):</strong></td>
+                </tr>
+                <tr>
+                    <td><img src="imgVal/lat.png" alt="Läti latt" id="lvl"></td>
+                    <td><input type="radio" id="lat" name="valuuta" value="LVL" oninput="valuutasoov()">
+                        <label for="lat">LVL</label></td>
+                    <td>Läti latt</td>
+                    <td>0.9136</td>
+                    <td colspan="2"><input type="number" id="eurot" min="10" max="1000" step="1" onclick="kokku()">
+                        <label for="eurot"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="imgVal/engl.jpg" alt="Inglise nael" id="gbp"></td>
+                    <td><input type="radio" id="ingl" name="valuuta" value="GBP" oninput="valuutasoov()">
+                        <label for="ingl">GBP</label></td>
+                    <td>Inglise nael</td>
+                    <td>0.8329</td>
+                    <td colspan="2"><div id="summakokku"></div></td>
+                </tr>
+            </table>
+        </section>
+        <section>
             <h2>Auto rent</h2>
             <br>
             <table id="autod">
@@ -62,19 +120,20 @@
                     <td rowspan="6"></td>
                     <td rowspan="2">
                         <p><strong>Sinu valik: </strong></p>
-                        <div id="valik">Siia tuleb pilt!</div>
+                        <div id="valik"><img src="" alt="Siia tuleb pilt!" id="valikpilt">
+                        <div id="valikID"></div></div>
                         <br>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" id="auto1" name="autovalik" value="img/AudiA5.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto1" name="autovalik" value="Audi" oninput="autovalikJS()">
                         <label for="auto1">Audi</label>
                         <p>Hind: 50.50 € / päev<br>
                             Tagatisraha: 100</p>
                     </td>
                     <td>
-                        <input type="radio" id="auto2" name="autovalik" value="img/BMW6.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto2" name="autovalik" value="BMW" oninput="autovalikJS()">
                         <label for="auto2">BMW</label>
                         <p>Hind: 85 € / päev<br>
                             Tagatisraha: 100</p>
@@ -94,13 +153,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" id="auto3" name="autovalik" value="img/JAGUARXF.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto3" name="autovalik" value="Jaguar" oninput="autovalikJS()">
                         <label for="auto3">Jaguar</label>
                         <p>Hind: 100.50 € / päev<br>
                             Tagatisraha: 150</p>
                     </td>
                     <td>
-                        <input type="radio" id="auto4" name="autovalik" value="img/MercedesCLS63AMG.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto4" name="autovalik" value="Mercedes-Benz" oninput="autovalikJS()">
                         <label for="auto4">Mercedes-Benz</label>
                         <p>Hind: 125€ / päev<br>
                             Tagatisraha: 150</p>
@@ -123,13 +182,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="radio" id="auto5" name="autovalik" value="img/ChevroletCamaro.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto5" name="autovalik" value="Chevrolet" oninput="autovalikJS()">
                         <label for="auto5">Chevrolet</label>
                         <p>Hind: 150.50€ / päev<br>
                             Tagatisraha: 200</p>
                     </td>
                     <td>
-                        <input type="radio" id="auto6" name="autovalik" value="img/FordMustangV6.jpg" oninput="autovalikJS()">
+                        <input type="radio" id="auto6" name="autovalik" value="Ford" oninput="autovalikJS()">
                         <label for="auto6">Ford</label>
                         <p>Hind: 175€ / päev<br>
                             Tagatisraha: 200</p>

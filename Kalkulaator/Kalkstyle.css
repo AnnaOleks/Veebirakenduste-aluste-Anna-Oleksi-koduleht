@@ -1,3 +1,78 @@
+table#valuutaost tr:nth-child(1) td:nth-child(1) {
+    height: 20px;
+}
+table#valuutaost tr:nth-child(2) td:nth-child(1) {
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(2) td:nth-child(2) {
+    font-weight: bold;
+    width: 100px;
+}
+table#valuutaost tr:nth-child(3) td:nth-child(1) {
+    width: 70px;
+}
+table#valuutaost tr:nth-child(3) td:nth-child(2) {
+    width: 100px;
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(3) td:nth-child(3) {
+    width: 100px;
+}
+table#valuutaost tr:nth-child(4) td:nth-child(2) {
+    width: 100px;
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(5) td:nth-child(2) {
+    width: 100px;
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(6) td:nth-child(2) {
+    width: 100px;
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(7) td:nth-child(2) {
+    width: 100px;
+    font-weight: bold;
+}
+table#valuutaost tr:nth-child(2) td:nth-child(3) {
+    width: 250px;
+    border-right: solid 3px slategray;
+}
+table#valuutaost tr:nth-child(2) td:nth-child(4) {
+    font-weight: bold;
+    padding-left: 30px;
+}
+table#valuutaost tr:nth-child(3) td:nth-child(5) {
+    padding-left: 30px;
+    width: 90px;
+}
+table#valuutaost tr:nth-child(5) td:nth-child(5) {
+    padding-left: 30px;
+}
+table#valuutaost tr:nth-child(6) td:nth-child(5) {
+    padding-left: 30px;
+}
+table#valuutaost tr:nth-child(7) td:nth-child(5) {
+    padding-left: 30px;
+}
+#usd{
+    width: 50px;
+}
+#rub{
+    width: 50px;
+}
+#ltl{
+    width: 50px;
+}
+#lvl{
+    width: 50px;
+}
+#gbp{
+    width: 50px;
+}
+#valuutapilt{
+    width: 50px;
+}
 #audi{
     width:300px;
 }
@@ -87,6 +162,9 @@ input[type=radio] {
     padding: 10px;
     text-align: center;
     width: 220px;
+}
+#valikpilt{
+    width: 200px;
 }
 #vabaauto{
     width: 220px;
