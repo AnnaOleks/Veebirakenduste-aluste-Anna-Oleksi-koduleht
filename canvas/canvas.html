@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Anna Oleks koduleht</title>
+    <link rel="stylesheet" href="canvasStyle.css">
+    <script src="canvasScript.js"></script>
+    <script src="lippScript.js"></script>
+    <script src="majakeScript.js"></script>
+</head>
+<body>
+<!--päis-->
+<header>
+    <!--<img src="content/Untitled.png" alt="logo">-->
+    <h1>Veebirakenduste aluste Anna Oleksi koduleht</h1>
+</header>
+<!--naveegimismenüü-->
+<div class="container">
+    <div class="leftcolumn">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Avaleht</a></li>
+                <li><a href="../content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
+                    <ul class="dropdown">
+                        <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
+                        <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
+                    </ul>
+                </li>
+                <li><a href="../content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a>
+                    <ul class="dropdown">
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">HTML/CSS tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../MapArea/Map.html">Map</a></li>
+                                <li><a href="../Tabelid/Tabelid.html">Tabelid</a></li>
+                                <li><a href="../Tunnitoo/index.html">Tabel lehest - Tunnitöö</a></li>
+                                <li><a href="../Tunnitoo/Tunnitoostyle/index.html">Tabel lehest + CSS - Tunnitöö</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="../content/ylesanne/ylesanneContent/yltood.html">JavaScript tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="../Vormid/Kusimustik.html">Küsimustik</a></li>
+                                <li><a href="../Deligeerimine/Delindex.html">Deligeerimine</a></li>
+                                <li><a href="../Randompilt/myistatus.html">Random pilt</a></li>
+                                <li><a href="../Kalkulaator/Kalkindex.html">Kalkulaator</a></li>
+                                <li><a href="#">Canvas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--sisu-->
+    <main class="rightcolumn">
+        <section>
+            <h2>Joonistamine JS abil</h2>
+            <table id="tablepyhi">
+                <tr>
+                    <td><canvas id="pyhi" width="400" height="300"></canvas></td>
+                    <td>
+                        <input type="button" value="Ring" onclick="ring()">
+                        <br>
+                        <br>
+                        <label for="radius">Radius: </label>
+                        <input type="number" id="radius" min="1" max="200" step="10" onclick="ring()">
+                        <br>
+                        <br>
+                        <input type="button" value="Ristkylik" onclick="ristkylik()">
+                        <br>
+                        <br>
+                        <label for="laius">Laius: </label>
+                        <input type="number" id="laius" min="1" max="200" step="10" onclick="ristkylik()">
+                        <label for="korgus">Kõrgus: </label>
+                        <input type="number" id="korgus" min="1" max="200" step="10" onclick="ristkylik()">
+                        <br>
+                        <br>
+                        <input type="button" value="Joon" onclick="joon()">
+                        <br>
+                        <br>
+                        <input type="button" value="Kustuta" onclick="kustuta()">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Lipud</h2>
+            <table id="tablelipud">
+                <tr>
+                    <td>
+                        <canvas id="lipp" width="330" height="210"></canvas>
+                    </td>
+                    <td>
+                        <input type="button" value="Eesti" onclick="eestilipp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Prantsusmaa" onclick="prantslipp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Kreeka" onclick="kreekalipp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Kustuta" onclick="kustutalipp()">
+                    </td>
+                    <td>
+                        <canvas id="lippruut" width="250" height="250"></canvas>
+                    </td>
+                    <td>
+                        <input type="button" value="Sveits" onclick="sveitslipp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Vatikan" onclick="vatiklipp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Kustuta" onclick="kustutalippruut()">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Majake</h2>
+            <table id="tablemajake">
+                <tr>
+                    <td rowspan="2">
+                        <canvas id="majake" width="400" height="300"></canvas>
+                    </td>
+                    <td>
+                        <input type="button" value="Taevas" onclick="taevasnupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Pilv" onclick="pilvnupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Paike" onclick="paikenupp()">
+                        <br>
+                        <br>
+                        <label for="radiuspaike">Radius: </label>
+                        <br>
+                        <input type="number" id="radiuspaike" min="20" max="100" step="1" onclick="paikenupp()">
+                    </td>
+                    <td>
+                        <input type="button" value="Meri" onclick="merinupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Maa" onclick="maanupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Rohi" onclick="rohinupp()">
+                    </td>
+                    <td>
+                        <input type="button" value="Sein" onclick="seinnupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Aken" onclick="akennupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Uks" onclick="uksnupp()">
+                    </td>
+                    <td>
+                        <input type="button" value="Katus" onclick="katusnupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Korsten" onclick="korstennupp()">
+                        <br>
+                        <br>
+                        <input type="button" value="Suits" onclick="suitsnupp()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" id="majanupp" value="TERVE MAJA" onclick="majanupp()">
+                    </td>
+                    <td colspan="2">
+                        <input type="button" id="kustutanupp" value="KUSTUTA" onclick="kustutanupp()">
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</div>
+<!--jalus-->
+<footer>
+    <strong>Kontakt info</strong>
+    leht on välja töödeldud Anna Oleks &copy; 2025
+</footer>
+</body>
+</html>

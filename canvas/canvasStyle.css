@@ -1,0 +1,192 @@
+canvas{
+    background-color: #e6e6e6;
+    /*width: 400px;*/
+    border: 1px solid gray;
+}
+input[type=button]{
+    border: 1px solid gray;
+    color: gray;
+    padding: 10px;
+    box-shadow: 2px 2px 8px slategray;
+    width: 100px;
+}
+input[type=button]:hover{
+    color: black;
+}
+table#tablepyhi tr:nth-child(1) td:nth-child(1) {
+    width: 420px;
+}
+table#tablepyhi tr:nth-child(1) td:nth-child(2) {
+    vertical-align: top;
+}
+table#tablelipud tr:nth-child(1) td:nth-child(1) {
+    width: 350px;
+    vertical-align: top;
+}
+table#tablelipud tr:nth-child(1) td:nth-child(2) {
+    width: 220px;
+    vertical-align: top;
+}
+table#tablelipud tr:nth-child(1) td:nth-child(3) {
+    width: 270px;
+    vertical-align: top;
+}
+table#tablelipud tr:nth-child(1) td:nth-child(4) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(1) {
+    width: 420px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(2) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(3) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(4) {
+    width: 150px;
+    vertical-align: top;
+}
+table#tablemajake tr:nth-child(1) td:nth-child(5) {
+    width: 150px;
+    vertical-align: top;
+}
+#majanupp{
+    width: 255px;
+}
+#kustutanupp{
+    width: 255px;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', serif;
+    background: #e6e6e6;
+}
+header{
+    font-size: 20px;
+    font-variant: all-petite-caps;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("../content/ylesanne/ylesanneContent/logo2.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    font-family: 'Lato', serif;
+    border: double 5px #e6e6e6;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+.container {
+    display: flex;
+}
+.leftcolumn{
+    float: left;
+    width: 170px;
+    margin: 0;
+}
+.rightcolumn{
+    float: left;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.rightcolumn section{
+    background-color: white;
+    border: 6px double #e6e6e6;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.menu{
+    background-color: black;
+    display: block;
+    position: relative;
+    float: left;
+    width: 170px;
+    line-height: 1.5;
+    color: white;
+    overflow: visible;
+    height: 100%;
+}
+.menu ul {
+    padding-left: 0;
+}
+.menu ul>li{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.menu li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.menu li a:hover{
+    background-color: slategray;
+    color: white;
+}
+.menu li:hover>ul{
+    display: block;
+}
+.menu li:hover{
+    background-color: slategray;
+    color: white;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.dropdown li a{
+    background-color: black;
+}
+.dropdown li:hover a{
+    background-color: slategray;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    clear: both;
+    border: double 5px #e6e6e6;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+.dropdown2 li a{
+    background-color: black;
+}
+.dropdown2 li:hover a{
+    background-color: black;
+}
