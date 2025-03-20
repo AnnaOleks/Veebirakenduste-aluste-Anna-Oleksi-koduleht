@@ -4,16 +4,16 @@
     <auto>
         <mark>Audi</mark>
         <pilt>AudiA5.jpg</pilt>
-        <link></link>
+        <link>https://www.audi.ee/et/</link>
     </auto>
     <auto>
-        <mark>Chevrolt</mark>
+        <mark>Chevrolet</mark>
         <pilt>ChevroletCamaro.jpg</pilt>
-        <link></link>
+        <link>https://www.chevrolet.com/electric</link>
     </auto>
     <auto>
         <mark>Jaguar</mark>
         <pilt>JAGUARXF.jpg</pilt>
-        <link></link>
+        <link>https://www.jaguar.ee/</link>
     </auto>
 </autod>

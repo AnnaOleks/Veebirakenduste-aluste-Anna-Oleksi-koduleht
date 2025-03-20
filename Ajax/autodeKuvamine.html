@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Autode Kuvamine AJAX meetodi abil</title>
+    <link rel="stylesheet" href="../content/ylesanne/ylesannestyle.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         // xml failiga uhendus
@@ -21,7 +22,7 @@
         function kuvaXML(xml){
             $(xml).find("auto").each(function(){
                 $("#vastus").append(
-                    '<h2>'+$(this).find("mark").text()+'</h2>'+
+                    '<h3>'+$(this).find("mark").text()+'</h3>'+
                     '<a href="'+$(this).find("link").text()+'" target="_blank">'+
                     '<img src="pildid/'+$(this).find("pilt").text()+'" alt="pilt">'+
                     '</a>'+
@@ -36,9 +37,67 @@
 
 </head>
 <body>
-<h1>Ajax meetod - asynchronous JavaScript and XML, kliendi pool käivitav kood.</h1>
-<a href="https://www.metshein.com/unit/xml-xml-andmete-lugemine-jquery-abil/">XML andmete lugemine jQuery abil</a>
-<div id="vastus"></div>
 
+<body>
+<!--päis-->
+<header>
+    <!--<img src="content/Untitled.png" alt="logo">-->
+    <h1>Veebirakenduste aluste Anna Oleksi koduleht</h1>
+</header>
+<!--naveegimismenüü-->
+<div class="container">
+    <div class="leftcolumn">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Avaleht</a></li>
+                <li><a href="content/ylesanne/ylesanneContent/yllingid.html">Lingid</a></li>
+                <li><a href="https://annaoleks24.thkit.ee/wp/">Portfoolio</a>
+                    <ul class="dropdown">
+                        <li><a href="https://annaoleks24.thkit.ee/wp/">Uus</a></li>
+                        <li><a href="https://annaoleks.wordpress.com/">Vana</a></li>
+                    </ul>
+                </li>
+                <li><a href="content/ylesanne/ylesanneContent/yltood.html">Tehtud tööd</a>
+                    <ul class="dropdown">
+                        <li><a href="content/ylesanne/ylesanneContent/yltood.html">HTML/CSS tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="MapArea/Map.html">Map</a></li>
+                                <li><a href="Tabelid/Tabelid.html">Tabelid</a></li>
+                                <li><a href="Tunnitoo/index.html">Tabel lehest - Tunnitöö</a></li>
+                                <li><a href="Tunnitoo/Tunnitoostyle/index.html">Tabel lehest + CSS - Tunnitöö</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="content/ylesanne/ylesanneContent/yltood.html">JavaScript tööd</a>
+                            <ul class="dropdown2">
+                                <li><a href="Vormid/Kusimustik.html">Küsimustik</a></li>
+                                <li><a href="Deligeerimine/Delindex.html">Deligeerimine</a></li>
+                                <li><a href="Randompilt/myistatus.html">Random pilt</a></li>
+                                <li><a href="Kalkulaator/Kalkindex.html">Kalkulaator</a></li>
+                                <li><a href="canvas/canvas.html">Canvas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--sisu-->
+    <main class="rightcolumn">
+        <section>
+            <h2>Ajax meetod - asynchronous JavaScript and XML, kliendi pool käivitav kood.</h2>
+                <a href="https://www.metshein.com/unit/xml-xml-andmete-lugemine-jquery-abil/">XML andmete lugemine jQuery abil</a>
+                <br>
+                <br>
+                <div id="vastus"></div>
+        </section>
+    </main>
+</div>
+<!--jalus-->
+<footer>
+    <strong>Kontakt info</strong>
+    leht on välja töödeldud Anna Oleks &copy; 2025
+</footer>
+</body>
 </body>
 </html>
