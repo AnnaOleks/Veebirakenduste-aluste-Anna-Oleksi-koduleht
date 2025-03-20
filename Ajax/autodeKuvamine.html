@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Autode Kuvamine AJAX meetodi abil</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // xml failiga uhendus
+        $(document).ready(function(){
+            $.ajax({
+                type: "GET",
+                url: "autod.xml",
+                dataType: "xml",
+                success: kuvaXML,
+                error: vigaXML
+            });
+        });
+        function vigaXML(){
+            $("#vastus").append('<p style="color:red;">Probleemid XML failiga!</p>');
+        }
+        function kuvaXML(xml){
+            $(xml).find("auto").each(function(){
+                $("#vastus").append(
+                    '<h2>'+$(this).find("mark").text()+'</h2>'+
+                    '<a href="'+$(this).find("link").text()+'" target="_blank">'+
+                    '<img src="pildid/'+$(this).find("pilt").text()+'" alt="pilt">'+
+                    '</a>'+
+                    '<a href="'+$(this).find("link").text()+'" target="_blank">'+
+                    $(this).find("mark").text()+
+                    '</a>'
+
+                );
+            });
+        }
+    </script>
+
+</head>
+<body>
+<h1>Ajax meetod - asynchronous JavaScript and XML, kliendi pool käivitav kood.</h1>
+<a href="https://www.metshein.com/unit/xml-xml-andmete-lugemine-jquery-abil/">XML andmete lugemine jQuery abil</a>
+<div id="vastus"></div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--kommentaarid-->
+<autod>
+    <auto>
+        <mark>Audi</mark>
+        <pilt>AudiA5.jpg</pilt>
+        <link></link>
+    </auto>
+    <auto>
+        <mark>Chevrolt</mark>
+        <pilt>ChevroletCamaro.jpg</pilt>
+        <link></link>
+    </auto>
+    <auto>
+        <mark>Jaguar</mark>
+        <pilt>JAGUARXF.jpg</pilt>
+        <link></link>
+    </auto>
+</autod>
