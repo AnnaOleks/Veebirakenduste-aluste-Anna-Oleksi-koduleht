@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Anna Oleks koduleht</title>
     <link rel="stylesheet" href="../content/ylesanne/ylesannestyle.css">
+    <link rel="stylesheet" href="opilasedStyle.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         // xml failiga uhendus
         $(document).ready(function(){
             $.ajax({
                 type: "GET",
-                url: "autod.xml",
+                url: "opilased.xml",
                 dataType: "xml",
                 success: kuvaXML,
                 error: vigaXML
@@ -20,24 +21,23 @@
             $("#vastus").append('<p style="color:red;">Probleemid XML failiga!</p>');
         }
         function kuvaXML(xml){
-            $(xml).find("auto").each(function(){
+            $(xml).find("opilane").each(function(){
                 $("#vastus").append(
-                    '<h3>'+$(this).find("mark").text()+'</h3>'+
-                    '<a href="'+$(this).find("link").text()+'" target="_blank">'+
-                    '<img src="pildid/'+$(this).find("pilt").text()+'" alt="pilt">'+
-                    '</a>'+
-                    '<a href="'+$(this).find("link").text()+'" target="_blank">'+
-                    $(this).find("mark").text()+
-                    '</a>'
+                    '<tr>'+
+                    '<td><h3>'+$(this).find("nimi").text()+'</h3></td>'+
+                    '<td>'+$(this).find("sugu").text()+'</td>'+
+                    '<td><a href="'+$(this).find("link").text()+'" target="_blank">'+
+                    '<img src="fotod/'+$(this).find("pilt").text()+'" alt="pilt" id="roundpilt">'+
+                    '</a></td>'+
+                    '<td><a href="'+$(this).find("link").text()+'" target="_blank">'+
+                    $(this).find("nimi").text()+
+                    '</a></td>'
 
                 );
             });
         }
     </script>
-
 </head>
-<body>
-
 <body>
 <!--päis-->
 <header>
@@ -85,11 +85,10 @@
     <!--sisu-->
     <main class="rightcolumn">
         <section>
-            <h2>Ajax meetod - asynchronous JavaScript and XML, kliendi pool käivitav kood.</h2>
-                <a href="https://www.metshein.com/unit/xml-xml-andmete-lugemine-jquery-abil/">XML andmete lugemine jQuery abil</a>
-                <br>
-                <br>
-                <div id="vastus"></div>
+            <h2>TARgv24 õpilased</h2>
+            <br>
+            <br>
+            <div id="vastus"></div>
         </section>
     </main>
 </div>

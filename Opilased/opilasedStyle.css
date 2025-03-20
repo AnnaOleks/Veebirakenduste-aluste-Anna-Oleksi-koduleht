@@ -1,0 +1,13 @@
+#roundpilt{
+    border-radius: 50%;
+    width: 150px;
+}
+
+tr {
+    width: 150px;
+
+}
+td{
+    width: 150px;
+    border: 1px solid black;
+}
