@@ -3,13 +3,13 @@
 <opilased>
     <opilane>
         <nimi>Aleksander Bekasov</nimi>
-        <pilt>anonim.jpg</pilt>
+        <pilt>AleksanderBekasov.jpg</pilt>
         <link>https://AleksanderBekasov24.thkit.ee/</link>
         <sugu>Mees</sugu>
     </opilane>
     <opilane>
         <nimi>Miroslav Burdyga</nimi>
-        <pilt>anonim.jpg</pilt>
+        <pilt>MiroslavBurdyga.jpg</pilt>
         <link>https://MiroslavBurdyga24.thkit.ee/</link>
         <sugu>Mees</sugu>
     </opilane>
@@ -21,31 +21,31 @@
     </opilane>
     <opilane>
         <nimi>Gleb Dranitsõn</nimi>
-        <pilt>glebdranitson.png</pilt>
+        <pilt>GlebDranitson.png</pilt>
         <link>https://glebdranitson24.thkit.ee/</link>
         <sugu>Mees</sugu>
     </opilane>
     <opilane>
         <nimi>Zhan-Gabriel Gerke</nimi>
-        <pilt>zhan.jpg</pilt>
+        <pilt>Zhan-GabrielGerke.jpg</pilt>
         <link>https://Zhan-GabrielGerke24.thkit.ee/</link>
         <sugu>Mees</sugu>
     </opilane>
     <opilane>
         <nimi>Nicole Gulojan</nimi>
-        <pilt>anonim.jpg</pilt>
+        <pilt>NicoleGulojan.jpg</pilt>
         <link>https://NicoleGulojan24.thkit.ee/</link>
         <sugu>Naine</sugu>
     </opilane>
     <opilane>
         <nimi>Jekaterina Guzek</nimi>
-        <pilt>jekaterinaguzek.jpg</pilt>
+        <pilt>JekaterinaGuzek.jpg</pilt>
         <link>https://jekaterinaguzek24.thkit.ee/</link>
         <sugu>Naine</sugu>
     </opilane>
     <opilane>
         <nimi>Ravil Hasjanov</nimi>
-        <pilt>anonim.jpg</pilt>
+        <pilt>RavilHasjanov.jpg</pilt>
         <link>https://RavilHasjanov24.thkit.ee/</link>
         <sugu>Mees</sugu>
     </opilane>
@@ -56,9 +56,75 @@
         <sugu>Mees</sugu>
     </opilane>
     <opilane>
-        <nimi>AnastassiaKostjuk</nimi>
+        <nimi>Anastassia Kostjuk</nimi>
         <pilt>AnastassiaKostjuk.jpg</pilt>
         <link>https://AnastassiaKostjuk24.thkit.ee/</link>
         <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Deniel Kruusman</nimi>
+        <pilt>DenielKruusman.jpg</pilt>
+        <link>https://DenielKruusman24.thkit.ee/</link>
+        <sugu>Mees</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Andrei Lebedev</nimi>
+        <pilt>AndreiLebedev.jpg</pilt>
+        <link>https://AndreiLebedev24.thkit.ee/</link>
+        <sugu>Mees</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Kirill Melnikov</nimi>
+        <pilt>KirillMelnikov.jpg</pilt>
+        <link>https://KirillMelnikov24.thkit.ee/</link>
+        <sugu>Mees</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Anna Oleks</nimi>
+        <pilt>AnnaOleks.jpg</pilt>
+        <link>https://AnnaOleks24.thkit.ee/</link>
+        <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Matvei Orlov</nimi>
+        <pilt></pilt>
+        <link>https://MatvieiOrlov24.thkit.ee/</link>
+        <sugu>Mees</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Ksenia Plešakova</nimi>
+        <pilt>KseniaPlesakova.jpg</pilt>
+        <link>https://KseniaPlešakova24.thkit.ee/</link>
+        <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Maria Smolina</nimi>
+        <pilt>MariaSmolina.jpg</pilt>
+        <link>https://MariaSmolina24.thkit.ee/</link>
+        <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Evgeny Tailov</nimi>
+        <pilt>EvgenyTailov.jpg</pilt>
+        <link>https://EvgenyTailov24.thkit.ee/</link>
+        <sugu>Mees</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Mari Luna Tei</nimi>
+        <pilt>MariLunaTei.jpg</pilt>
+        <link>https://MariLunaTei24.thkit.ee/</link>
+        <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Veronika Vanitševa</nimi>
+        <pilt>VeronikaVanitseva.jpg</pilt>
+        <link>https://VeronikaVanitseva24.thkit.ee/</link>
+        <sugu>Naine</sugu>
+    </opilane>
+    <opilane>
+        <nimi>Evgeniy Vasiliev</nimi>
+        <pilt>EvgeniyVasiliev.jpg</pilt>
+        <link>https://EvgeniyVasiliev24.thkit.ee/</link>
+        <sugu>Mees</sugu>
     </opilane>
 </opilased>

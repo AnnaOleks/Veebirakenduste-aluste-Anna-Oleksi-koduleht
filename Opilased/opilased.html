@@ -20,20 +20,32 @@
         function vigaXML(){
             $("#vastus").append('<p style="color:red;">Probleemid XML failiga!</p>');
         }
-        function kuvaXML(xml){
-            $(xml).find("opilane").each(function(){
-                $("#vastus").append(
-                    '<tr>'+
-                    '<td><h3>'+$(this).find("nimi").text()+'</h3></td>'+
-                    '<td>'+$(this).find("sugu").text()+'</td>'+
-                    '<td><a href="'+$(this).find("link").text()+'" target="_blank">'+
-                    '<img src="fotod/'+$(this).find("pilt").text()+'" alt="pilt" id="roundpilt">'+
-                    '</a></td>'+
-                    '<td><a href="'+$(this).find("link").text()+'" target="_blank">'+
-                    $(this).find("nimi").text()+
-                    '</a></td>'
+        function kuvaXML(xml) {
+            $("#vastus").empty();
 
-                );
+            $("#vastus").append('<div id="boys"></div>');
+            $("#vastus").append('<div id="girls"</div>');
+
+            $(xml).find("opilane").each(function() {
+                let nimi = $(this).find("nimi").text();
+                let sugu = $(this).find("sugu").text();
+                let link = $(this).find("link").text();
+                let pilt = $(this).find("pilt").text();
+
+                let andmed = '<h3>' + nimi + '</h3>' +
+                    sugu +
+                    '<a href="' + link + '" target="_blank">' +
+                    '<img src="fotod' + pilt + '" alt="pilt" id="roundpilt">' +
+                    '</a>' +
+                    '<a href="' + link + '" target="_blank">' +
+                    nimi +
+                    '</a>';
+
+                if (sugu === "mees") {
+                    $("#boys").append(andmed);
+                } else {
+                    $("#girls").append(andmed);
+                }
             });
         }
     </script>
@@ -88,7 +100,15 @@
             <h2>TARgv24 õpilased</h2>
             <br>
             <br>
-            <div id="vastus"></div>
+            <table id="opilasteNimekiri">
+                <tr>
+                    <td><div id="vastus"></div></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+
         </section>
     </main>
 </div>
