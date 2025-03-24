@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         // xml failiga uhendus
-        $(document).ready(function(){
+        $(document).ready(function () {
             $.ajax({
                 type: "GET",
                 url: "opilased.xml",
@@ -17,36 +17,56 @@
                 error: vigaXML
             });
         });
-        function vigaXML(){
+
+        function vigaXML() {
             $("#vastus").append('<p style="color:red;">Probleemid XML failiga!</p>');
         }
+
         function kuvaXML(xml) {
             $("#vastus").empty();
 
             $("#vastus").append('<div id="boys"></div>');
-            $("#vastus").append('<div id="girls"</div>');
+            $("#vastus").append('<div id="girls"></div>');
 
-            $(xml).find("opilane").each(function() {
+            $(xml).find("opilane").each(function () {
                 let nimi = $(this).find("nimi").text();
                 let sugu = $(this).find("sugu").text();
                 let link = $(this).find("link").text();
                 let pilt = $(this).find("pilt").text();
 
-                let andmed = '<h3>' + nimi + '</h3>' +
-                    sugu +
-                    '<a href="' + link + '" target="_blank">' +
-                    '<img src="fotod' + pilt + '" alt="pilt" id="roundpilt">' +
+                let andmed = '<div class="card" data-sugu="' + sugu + '"><a href="' + link + '" target="_blank">' +
+                    '<img src="fotod/' + pilt + '" alt="pilt" id="roundpilt"/>' +
                     '</a>' +
+                    '<h3>' + nimi + '</h3>' +
+                    '<p class="sugu-text">' + sugu + '</p>' +
                     '<a href="' + link + '" target="_blank">' +
-                    nimi +
-                    '</a>';
+                    "Vaata lähemalt" +
+                    '</a></div>';
 
-                if (sugu === "mees") {
-                    $("#boys").append(andmed);
+                let card = $(andmed);
+
+                if (sugu === "Mees") {
+                    card.addClass("boy");
+                    $("#boys").append(card);
                 } else {
-                    $("#girls").append(andmed);
+                    card.addClass("girl");
+                    $("#girls").append(card);
                 }
             });
+            $(".card").hover(
+                function () {
+                    if ($(this).hasClass("boy")) {
+                        $(this).css('background-color', '#e7f7fb');
+                    } else {
+                        $(this).css('background-color', '#fde5f4');
+                    }
+                    $(this).find(".sugu-text").fadeIn(200);
+                },
+                function () {
+                    $(this).css('background-color', 'white');
+                    $(this).find(".sugu-text").fadeOut(200);
+                }
+            );
         }
     </script>
 </head>
@@ -100,15 +120,7 @@
             <h2>TARgv24 õpilased</h2>
             <br>
             <br>
-            <table id="opilasteNimekiri">
-                <tr>
-                    <td><div id="vastus"></div></td>
-                </tr>
-                <tr>
-
-                </tr>
-            </table>
-
+            <div id="vastus"></div>
         </section>
     </main>
 </div>
@@ -117,6 +129,5 @@
     <strong>Kontakt info</strong>
     leht on välja töödeldud Anna Oleks &copy; 2025
 </footer>
-</body>
 </body>
 </html>

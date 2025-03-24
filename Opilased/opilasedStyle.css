@@ -1,13 +1,43 @@
 #roundpilt{
     border-radius: 50%;
-    width: 150px;
+    width: 100px;
+    border: double 5px black;
+}
+#vastus{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 120px;
+    width: 100%;
+    background-color: black;
+    padding: 50px;
+}
+#boys{
+    justify-content: flex-start;
 }
 
-tr {
-    width: 150px;
-
+#girls{
+    justify-content: flex-start;
 }
-td{
-    width: 150px;
-    border: 1px solid black;
+#boys, #girls {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+}
+.card {
+    width: 220px;
+    border: 5px double black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sugu-text {
+    display: none;
 }
