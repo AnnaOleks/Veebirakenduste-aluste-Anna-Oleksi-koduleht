@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <title>Anna Oleks koduleht</title>
     <link rel="stylesheet" href="content/ylesanne/ylesannestyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script>
+        function black() {
+            $('#sectionJQuery').css('background-color', 'black');
+            $('#sectionJQuery').css('color', 'white');
+        }
+        function white() {
+            $('#sectionJQuery').css('background-color', 'white');
+            $('#sectionJQuery').css('color', 'black');
+        }
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(this).next(".panel").slideToggle("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#peidaanupp").click(function(){
+                $("#minuPilt").hide("slow", function(){
+                    alert("Pilt on peidetud");
+                });
+            });
+        });
+        $(document).ready(function(){
+            $("#naitanupp").click(function(){
+                $("#minuPilt").show("slow", function(){
+                    alert("Pilt on tagastatud");
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("#pilt").animate({left: '1320px'}, 2000)
+        });
+
+        let animationActive = true;
+
+        function moveImage() {
+            if (!animationActive) return;
+
+            let newX = Math.random() * ($(window).width() - $("#morph").width());
+            let newY = Math.random() * ($(window).height() - $("#morph").height());
+
+            $("#morph").animate({left: newX, top: newY}, 30000, moveImage);
+        }
+        $(document).ready(function() {
+            $("#morph").css({ position: "absolute" });
+            moveImage();
+
+            $("#stopnupp").click(function(){
+                $("#morph").stop();
+                animationActive = false;
+            });
+
+            $("#startnupp").click(function() {
+                if (!animationActive) {
+                    animationActive = true;
+                    moveImage();
+                }
+            });
+        });
+        $(document).ready(function(){
+            $("#peidamorph").click(function(){
+                $("#morph").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("#naitamorph").click(function(){
+                $("#morph").show();
+            });
+        });
+
+            function paremale() {
+                $('#sectionKeeled').animate({left: '0px'}, 1000)
+                $('#sectionJQuery').animate({left: '0px'}, 1000)
+            }
+
+            function vasakule() {
+                $('#sectionKeeled').animate({left: '670px'}, 1000)
+                $('#sectionJQuery').animate({left: '-670px'}, 1000)
+            }
+
+            function start() {
+                $('#sectionJQuery').mouseenter(black); //hiir on peal
+                $('#sectionJQuery').mouseleave(white);// hiir on välja
+                $('#minuPilt').draggable();
+            }
+    </script>
 </head>
-<body>
+<body  onload="start()">
 <!--päis-->
 <header>
     <!--<img src="content/Untitled.png" alt="logo">-->
@@ -53,20 +140,82 @@
     <!--sisu-->
     <main class="rightcolumn">
         <section>
-            <h2>Õpilase info</h2>
-            <p>..<br>
-                ..<br>
-                ..<br>
-                ..<br>
-                ..</p>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Õpilase info</h2>
+                        Mina olen Anna Oleks, kirglik tarkvaraarendaja ja tehnoloogiahuviline, kelle eesmärk on pidev eneseareng ning uute teadmiste ja oskuste omandamine. <br>
+                        Programmeerimine ei ole minu jaoks pelgalt töö või hobi – see on minu kirg, viis maailma paremaks muuta ja lahendada praktilisi probleeme nutikate lahendustega.<br>
+                        Minu koduleht on koht, kus jagan oma teadmisi, kogemusi ja projekte.
+                    </td>
+                    <td>
+                        <img src="Opilased/fotod/AnnaOleks.jpg" alt="minu pilt" id="minuPilt">
+                    </td>
+                </tr>
+            </table>
         </section>
+        <div class="sectionKJ">
+            <section id="sectionKeeled">
+                <h2>Õpitud keeled</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </section>
+            <section id="sectionJQuery">
+                <h2>JQuery</h2>
+                <p>Juhendi avamiseks/sulgemiseks vajuta soovitud paragrafile</p>
+                <ul>
+                    <div class="flip">
+                        <li>Minu pildi lohistamine</li>
+                    </div>
+                    <div class="panel">
+                        .draggable võimaldab piltide lohistamist, järgige neid samme:
+                        <ol>
+                            <li>Liigutage kursor pildile.</li>
+                            <li>Vajutage ja hoidke all hiire vasakut nuppu (või hoidke sõrme all, kui kasutate puuteekraani).</li>
+                            <li>Lohistage pilt soovitud kohta, hoides nuppu/sõrme all.</li>
+                            <li>Laske nupp lahti – pilt jääb uude asukohta.</li>
+                        </ol>
+                    </div>
+                    <div class="flip">
+                        <li>Võimalus peita minu pilti</li>
+                    </div>
+                    <div class="panel">
+                        <button id="peidaanupp">PEIDA</button>
+                        <button id="naitanupp">NÄITA</button>
+                    </div>
+                    <div class="flip">
+                        <li>Võimalus vahetada sektsioone</li>
+                    </div>
+                    <div class="panel">
+                        <button id="vahetanupp" onclick="vasakule()">VAHETA</button>
+                        <button id="tagasinupp" onclick="paremale()">TAGASI</button>
+                    </div>
+                    <div class="flip">
+                        <li>Animatsiooniga toimingud</li>
+                    </div>
+                    <div class="panel">
+                        <button id="stopnupp">STOP</button>
+                        <button id="startnupp">START</button>
+                        <button id="peidamorph">PEIDA</button>
+                        <button id="naitamorph">NÄITA</button>
+                    </div>
+                </ul>
+            </section>
+        </div>
     </main>
 </div>
+<img src="Style/Morph.gif" alt="morph" id="morph" width="200px">
 <!-- I love biba -->
 <!--jalus-->
 <footer>
     <strong>Kontakt info</strong>
     leht on välja töödeldud Anna Oleks &copy; 2025
 </footer>
+
 </body>
 </html>

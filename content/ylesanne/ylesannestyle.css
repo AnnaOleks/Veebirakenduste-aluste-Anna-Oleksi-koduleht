@@ -1,3 +1,44 @@
+#minuPilt{
+    width:250px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: double 5px black;
+}
+tr{
+    vertical-align: top;
+}
+#sectionKeeled, #sectionJQuery{
+    width:48%;
+    position: relative;
+}
+.sectionKJ{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.panel, .flip {
+    text-align: left;
+}
+.flip:hover {
+    font-weight: bold;
+}
+.panel {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: left;
+    display: none;
+}
+#peidaanupp, #naitanupp, #vahetanupp, #tagasinupp, #stopnupp, #startnupp, #peidamorph, #naitamorph{
+    border: double 3px black;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+}
+#morph{
+    opacity: 1;
+    z-index: 10;
+    top: 600px;
+}
 * {
     box-sizing: border-box;
 
